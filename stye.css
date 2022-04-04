@@ -4,34 +4,41 @@
 :root {
     --color-primary: #1572A1;
     /* --color-primary: #FC4F4F; */
-    --color-text : #3A3845;
-    --bold-value : 600;
+    --color-text: #3A3845;
+    --main-container-width: 80%;
+    --bold-value: 600;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
 /* Navbark */
-.nav-bar{
+.nav-bar {
     height: 100px;
     background-color: ghostwhite;
 }
+
 .nav-bar-logo {
     width: 100%;
 }
+
 .nav-bar-cart {
-width: 35px;
+    width: 35px;
 }
-.navbar-right{
+
+.navbar-right {
     width: 25%;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: space-between
 }
+
 .navbar-right div {
-margin-right: 10px;
+    margin-right: 10px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -39,21 +46,25 @@ margin-right: 10px;
     cursor: pointer;
     font-weight: var(--bold-value);
     padding: 10px 20px;
-    border-radius: 5px;; 
+    border-radius: 5px;
+    ;
     border: 1px solid var(--color-text);
 }
-.navbar-right div:hover{
+
+.navbar-right div:hover {
     background-color: var(--color-primary);
     color: white;
 }
+
 .nav-bar-search {
     width: 80%;
     height: 50px;
-    border:none;
+    border: none;
     outline: none;
     padding: 5px 10px;
-    
+
 }
+
 .navbar-center {
     width: 40%;
     display: flex;
@@ -63,25 +74,27 @@ margin-right: 10px;
     border-radius: 50px;
 
 }
+
 .search-icon {
     padding: 0 20px;
 }
 
-.container{
+.container {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .wrapper {
-    width: 80%;
+    width: var(--main-container-width);
     height: 100px;
     margin: 0 auto;
-   
+
 }
 
-.navbar-left{
+.navbar-left {
     width: 25%;
     display: flex;
     justify-content: center;
@@ -89,26 +102,29 @@ margin-right: 10px;
 }
 
 /* Navbar */
- /* subnavi */
+/* subnavi */
 
- .sub-navi {
+.sub-navi {
     width: 100%;
     height: 50px;
     background-color: ghostwhite;
     border-bottom: 1px solid #DFDFDE;
- }
- .sub-navi-wrapper{
-     width: 80%;
-     margin: 0 auto;
-     height: 100%;
- }
-.category{
+}
+
+.sub-navi-wrapper {
+    width: var(--main-container-width);
+    margin: 0 auto;
+    height: 100%;
+}
+
+.category {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
+
 .category div {
     width: 100%;
     height: 100%;
@@ -119,8 +135,93 @@ margin-right: 10px;
     align-items: flex-end;
     color: var(--color-text);
     cursor: pointer;
+
 }
-.category div:hover{
-  border-bottom: 3px solid var(--color-primary);
-  color:  var(--color-primary);
+
+.category div:hover {
+    border-bottom: 3px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+/* coursel */
+
+.coursel {
+    width: 100%;
+    padding: 2rem 0;
+  
+}
+.coursel-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+.coursel-item{
+ width: 100%;
+ max-height: 20%;
+}
+.coursel-item-img{
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    padding: 0 25px;
+}
+
+
+/*product filter*/
+.product-filter {
+    width: 100%;
+    height: 100px;
+    background-color: ghostwhite;
+    border-bottom: 1px solid #DFDFDE;
+}
+.product-filter-wrapper {
+    width: var(--main-container-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+.product-category{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  
+}
+
+
+
+/* product */
+.product{
+    width: 100%;
+    max-height: 250px;
+    padding: 2rem 0;
+}
+.product-wrapper{
+    width: var(--main-container-width);
+    margin: 0 auto;
+    display: flex ;
+   gap: 20px;
+    align-items: center;
+    height: 350px;
+
+}
+.product-card{
+    width:30%;
+    height: 100%;
+    border:1px solid black
+
+
+}
+.product-title{
+    text-align: center;
+
+}
+.card-img{
+    width: 100%;
+    max-height: 70%;
+    object-fit: cover;
 }
